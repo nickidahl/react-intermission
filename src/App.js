@@ -1,14 +1,18 @@
 import React from "react";
 import { render } from "react-dom";
-import { Link, Router } from "@reach/router";
+import Header from "./Header";
+import Nav from "./Nav";
+import Main from "./Main";
+import Footer from "./Footer";
 
 const App = () => {
-
   return (
-    
-            <Router>
-              <Home path="/"  />
-            </Router>
+    <div>
+      <Header />
+      <Nav />
+      <Main />
+      <Footer />
+    </div>
   );
 };
 render(<App />, document.querySelector("#root"));
