@@ -1,18 +1,16 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { render } from "react-dom";
 import Header from "./Header";
-import Nav from "./Nav";
 import Main from "./Main";
 import Footer from "./Footer";
 
 const App = () => {
   return (
-    <div>
+    <Fragment>
       <Header />
-      <Nav />
       <Main />
       <Footer />
-    </div>
+    </Fragment>
   );
 };
 render(<App />, document.querySelector("#root"));
